@@ -1,0 +1,53 @@
+<html>
+    <head>
+       
+    </head>
+    <body>
+        <h1>Sample page</h1>
+        <div id="row">
+            <div id="col1">
+                <h2>Section 1</h2>
+                <p> <a href="#">Lipsum dolor</a> TEXT </p>
+                <p> TEXT </p>
+                </div>
+        </div>
+        <footer>
+            <ul id="bottomMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+
+            </ul>
+        </footer>
+        <script>
+//Създава се функция приемащата стойност DOM
+
+
+            function task(DOM){
+
+
+// Създава се константа, която ще взима родителския или елемента преди зададения
+
+
+                const parentElement = DOM.parentNode;
+
+
+//Създава се константа, извикваща наследниците или елементите след дадения елемент родител, след което се извиква в конзолата
+
+
+            const bottomMenu = parentElement.querySelectorAll("*");
+            console.log(bottomMenu);
+            }
+
+
+//След функцията се създава константа съдържаща желания DOM елемент
+            const element = document.getElementById("bottomMenu");
+          
+
+//Функцията се извиква и й се задава елемента като стойност 
+
+
+  task(element);
+   
+        </script>
+    </body>
+</html>
